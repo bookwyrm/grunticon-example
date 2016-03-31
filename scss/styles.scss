@@ -1,0 +1,24 @@
+html {
+  height: 100%;
+  background: #548ebe;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+.link--bookmark {
+  position: relative;
+  padding-left: 1em;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background-size: cover;
+    content: '';
+  }
+}
