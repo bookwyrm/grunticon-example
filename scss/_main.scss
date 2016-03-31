@@ -27,3 +27,6 @@ body {
   height: 1em;
 }
 
+.pretty-star {
+  @include sprite(spaark_design_icicle_star);
+}
