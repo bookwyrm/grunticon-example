@@ -62,7 +62,7 @@ $_width-index: 4;
 @mixin sprite($name) {
   // Assume PNG...
   $type: png;
-  $lookup-name: _lookup-anme($name);
+  $lookup-name: _lookup-name($name);
   $sprite-data: get-sprite-data($lookup-name, $type);
 
   @if $sprite-data != null {
