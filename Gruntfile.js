@@ -34,6 +34,25 @@ module.exports = function(grunt) {
           enhanceSVG: true,
           template: 'grunticon/template.hbs'
         }
+      },
+      scss: {
+        files: [{
+          expand: true,
+          cwd: 'svg/src',
+          src: ['*.svg'],
+          dest: 'scss/svg'
+        }],
+        options: {
+          cssprefix: 'icon--',
+          loadersnippet: 'grunticon.loader.not.used.js',
+          template: 'grunticon/scss-template.hbs',
+          previewTemplate: 'grunticon/scss-preview-template.hbs',
+          previewhtml: '_icons-setup.scss',
+          pngpath: 'svg/png',
+          datapngcss: '_icons.data.png.scss',
+          datasvgcss: '_icons.data.svg.scss',
+          urlpngcss: '_icons.fallback.scss'
+        }
       }
     }
   });

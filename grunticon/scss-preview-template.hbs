@@ -1,0 +1,24 @@
+$sprites-svg:
+{{#each icons}}
+  {{#with this}}
+    ${{prefix}}{{name}}-svg,
+  {{/with}}
+{{/each}}
+;
+
+$sprites-png:
+{{#each icons}}
+  {{#with this}}
+    ${{prefix}}{{name}}-png,
+  {{/with}}
+{{/each}}
+;
+
+$sprites-png-fallback:
+{{#each icons}}
+  {{#with this}}
+    ${{prefix}}{{name}}-png-fallback,
+  {{/with}}
+{{/each}}
+;
+
