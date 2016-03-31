@@ -11,6 +11,10 @@ module.exports = function(grunt) {
           dest: 'svg/dist'
         }],
         options: {
+          customselectors: {
+            '*': [ '.icon__before--$1::before', '.icon__after--$1::after' ]
+          },
+          cssprefix: '.icon--'
         }
       }
     }
