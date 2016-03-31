@@ -1,0 +1,19 @@
+{
+  "name": "grunticon-example",
+  "version": "1.0.0",
+  "description": "A sample setup for working with Grunticon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bookwyrm/grunticon-example.git"
+  },
+  "author": "Matt Vanderpol <matt@vanderpol.net> (http://mattvanderpol.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bookwyrm/grunticon-example/issues"
+  },
+  "homepage": "https://github.com/bookwyrm/grunticon-example#readme"
+}
