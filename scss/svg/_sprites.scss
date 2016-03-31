@@ -71,7 +71,7 @@ $_width-index: 4;
     background-image: url(nth($sprite-data, $_url-index));
 
     // ...but include SVG if it is available - body class set by modernizr
-    @at-root body.svg & {
+    @at-root html.svg & {
       $type: svg;
       $sprite-data: get-sprite-data($lookup-name, $type);
       @if $sprite-data != null {
