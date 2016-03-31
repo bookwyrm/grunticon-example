@@ -1,0 +1,85 @@
+$sprites-svg: () !default;
+$sprites-png: () !default;
+$sprites-png-fallback: () !default;
+
+$_name-index: 1;
+$_url-index: 2;
+$_height-index: 3;
+$_width-index: 4;
+
+// Helper to get sprite data
+@function get-sprite-data($name, $type: svg) {
+  $_return: null;
+
+  // Figure out what list to look at
+  $_list: $sprites-png-fallback;
+  @if $type == svg {
+    $_list: $sprites-svg;
+  } @else if $type == png {
+    $_list: $sprites-png;
+  }
+
+  // Look for a sprite with the right name on the list
+  @each $sprite-data in $_list {
+    @if $name == nth($sprite-data, $_name-index) {
+      $_return: $sprite-data;
+    }
+  }
+
+  @return $_return;
+}
+
+// Helper to format name for lookup
+@function _lookup-name($name) {
+  @return 'icon--#{$name}';
+}
+
+// Helper for sprite width
+@function sprite-width($name) {
+  $lookup-name: _lookup-name($name);
+  $sprite-data: get-sprite-data($lookup-name, png);
+
+  @if $sprite-data != null {
+    @return nth($sprite-data, $_width-index);
+  } @else {
+    @error "No sprite named #{$name} can be found";
+  }
+}
+
+// Helper for sprite height
+@function sprite-height($name) {
+  $lookup-name: _lookup-name($name);
+  $sprite-data: get-sprite($lookup-name, png);
+
+  @if $sprite-data != null {
+    @return nth($sprite-data, $_height-index);
+  } @else {
+    @error "No sprite named #{$name} can be found";
+  }
+}
+
+// Mixin for sprite styles
+@mixin sprite($name) {
+  // Assume PNG...
+  $type: png;
+  $lookup-name: _lookup-anme($name);
+  $sprite-data: get-sprite-data($lookup-name, $type);
+
+  @if $sprite-data != null {
+    width: nth($sprite-data, $_width-index);
+    height: nth($sprite-data, $_height-index);
+    background-image: url(nth($sprite-data, $_url-index));
+
+    // ...but include SVG if it is available - body class set by modernizr
+    @at-root body.svg & {
+      $type: svg;
+      $sprite-data: get-sprite-data($lookup-name, $type);
+      @if $sprite-data != null {
+        background-image: url(nth($sprite-data, $_url-index));
+      }
+    }
+  } @else {
+    @error "No sprite named #{$name} can be found";
+  }
+}
+
