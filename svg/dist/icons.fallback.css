@@ -1,36 +1,81 @@
-.icon__before--bookmark::before,
-.icon__after--bookmark::after,
-.icon--bookmark { background-image: url('png/bookmark.png'); background-repeat: no-repeat; }
+.icon__before--bookmark::before,.icon__after--bookmark::after,
+.icon--bookmark {
+    background-image: url('png/bookmark.png');
+    background-repeat: no-repeat;
+    height: 8px;
+    width: 8px;
+}
 
-.icon__before--spaark_design_icicle_compass::before,
-.icon__after--spaark_design_icicle_compass::after,
-.icon--spaark_design_icicle_compass { background-image: url('png/spaark_design_icicle_compass.png'); background-repeat: no-repeat; }
 
-.icon__before--spaark_design_icicle_cylinder-2::before,
-.icon__after--spaark_design_icicle_cylinder-2::after,
-.icon--spaark_design_icicle_cylinder-2 { background-image: url('png/spaark_design_icicle_cylinder-2.png'); background-repeat: no-repeat; }
+.icon__before--spaark_design_icicle_compass::before,.icon__after--spaark_design_icicle_compass::after,
+.icon--spaark_design_icicle_compass {
+    background-image: url('png/spaark_design_icicle_compass.png');
+    background-repeat: no-repeat;
+    height: 64px;
+    width: 64px;
+}
 
-.icon__before--spaark_design_icicle_eyedropper::before,
-.icon__after--spaark_design_icicle_eyedropper::after,
-.icon--spaark_design_icicle_eyedropper { background-image: url('png/spaark_design_icicle_eyedropper.png'); background-repeat: no-repeat; }
 
-.icon__before--spaark_design_icicle_filter::before,
-.icon__after--spaark_design_icicle_filter::after,
-.icon--spaark_design_icicle_filter { background-image: url('png/spaark_design_icicle_filter.png'); background-repeat: no-repeat; }
+.icon__before--spaark_design_icicle_cylinder-2::before,.icon__after--spaark_design_icicle_cylinder-2::after,
+.icon--spaark_design_icicle_cylinder-2 {
+    background-image: url('png/spaark_design_icicle_cylinder-2.png');
+    background-repeat: no-repeat;
+    height: 64px;
+    width: 64px;
+}
 
-.icon__before--spaark_design_icicle_paint::before,
-.icon__after--spaark_design_icicle_paint::after,
-.icon--spaark_design_icicle_paint { background-image: url('png/spaark_design_icicle_paint.png'); background-repeat: no-repeat; }
 
-.icon__before--spaark_design_icicle_picture::before,
-.icon__after--spaark_design_icicle_picture::after,
-.icon--spaark_design_icicle_picture { background-image: url('png/spaark_design_icicle_picture.png'); background-repeat: no-repeat; }
+.icon__before--spaark_design_icicle_eyedropper::before,.icon__after--spaark_design_icicle_eyedropper::after,
+.icon--spaark_design_icicle_eyedropper {
+    background-image: url('png/spaark_design_icicle_eyedropper.png');
+    background-repeat: no-repeat;
+    height: 64px;
+    width: 64px;
+}
 
-.icon__before--spaark_design_icicle_star::before,
-.icon__after--spaark_design_icicle_star::after,
-.icon--spaark_design_icicle_star { background-image: url('png/spaark_design_icicle_star.png'); background-repeat: no-repeat; }
 
-.icon__before--spaark_design_icicle_vector::before,
-.icon__after--spaark_design_icicle_vector::after,
-.icon--spaark_design_icicle_vector { background-image: url('png/spaark_design_icicle_vector.png'); background-repeat: no-repeat; }
+.icon__before--spaark_design_icicle_filter::before,.icon__after--spaark_design_icicle_filter::after,
+.icon--spaark_design_icicle_filter {
+    background-image: url('png/spaark_design_icicle_filter.png');
+    background-repeat: no-repeat;
+    height: 64px;
+    width: 64px;
+}
+
+
+.icon__before--spaark_design_icicle_paint::before,.icon__after--spaark_design_icicle_paint::after,
+.icon--spaark_design_icicle_paint {
+    background-image: url('png/spaark_design_icicle_paint.png');
+    background-repeat: no-repeat;
+    height: 64px;
+    width: 64px;
+}
+
+
+.icon__before--spaark_design_icicle_picture::before,.icon__after--spaark_design_icicle_picture::after,
+.icon--spaark_design_icicle_picture {
+    background-image: url('png/spaark_design_icicle_picture.png');
+    background-repeat: no-repeat;
+    height: 64px;
+    width: 64px;
+}
+
+
+.icon__before--spaark_design_icicle_star::before,.icon__after--spaark_design_icicle_star::after,
+.icon--spaark_design_icicle_star {
+    background-image: url('png/spaark_design_icicle_star.png');
+    background-repeat: no-repeat;
+    height: 64px;
+    width: 64px;
+}
+
+
+.icon__before--spaark_design_icicle_vector::before,.icon__after--spaark_design_icicle_vector::after,
+.icon--spaark_design_icicle_vector {
+    background-image: url('png/spaark_design_icicle_vector.png');
+    background-repeat: no-repeat;
+    height: 64px;
+    width: 64px;
+}
+
 
