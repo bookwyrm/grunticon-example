@@ -16,9 +16,13 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 1em;
-    height: 1em;
     background-size: cover;
     content: '';
   }
+}
+
+// Specificity hack
+.icon__before--bookmark.link--bookmark::before {
+  width: 1em;
+  height: 1em;
 }
