@@ -30,7 +30,8 @@ module.exports = function(grunt) {
           customselectors: {
             '*': [ '.icon__before--$1::before', '.icon__after--$1::after' ]
           },
-          cssprefix: '.icon--'
+          cssprefix: '.icon--',
+          enhanceSVG: true
         }
       }
     }
@@ -40,6 +41,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-grunticon');
 
   grunt.registerTask('buildsvg', ['grunticon']);
-
   grunt.registerTask('default', []);
 };
