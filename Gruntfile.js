@@ -31,7 +31,8 @@ module.exports = function(grunt) {
             '*': [ '.icon__before--$1::before', '.icon__after--$1::after' ]
           },
           cssprefix: '.icon--',
-          enhanceSVG: true
+          enhanceSVG: true,
+          template: 'grunticon/template.hbs'
         }
       }
     }
