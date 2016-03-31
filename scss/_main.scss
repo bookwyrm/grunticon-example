@@ -1,0 +1,29 @@
+html {
+  height: 100%;
+  background: #548ebe;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+.link--bookmark {
+  position: relative;
+  padding-left: 1em;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    content: '';
+  }
+}
+
+// Specificity hack
+.icon__before--bookmark.link--bookmark::before {
+  width: 1em;
+  height: 1em;
+}
+
